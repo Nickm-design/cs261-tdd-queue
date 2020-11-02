@@ -97,16 +97,16 @@ class TestQueue(unittest.TestCase):
         q.enqueue('fi')
         self.assertEqual('fee', q.dequeue())
 
-    # def test_dequeue_two_internal(self):
-    #     """
-    #     Dequeuing from a two-element queue removes the first enqueued value from
-    #     the sllist.
-    #     """
-    #     q = Queue()
-    #     q.enqueue('fee')
-    #     q.enqueue('fi')
-    #     _ = q.dequeue()
-    #     self.assertEqual('fi', q.data.first.value)
+    def test_dequeue_two_internal(self):
+        """
+        Dequeuing from a two-element queue removes the first enqueued value from
+        the sllist.
+        """
+        q = Queue()
+        q.enqueue('fee')
+        q.enqueue('fi')
+        _ = q.dequeue()
+        self.assertEqual('fi', q.data.first.value)
 
     # def test_dequeue_three(self):
     #     """
