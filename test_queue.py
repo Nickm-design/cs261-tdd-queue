@@ -108,18 +108,18 @@ class TestQueue(unittest.TestCase):
         _ = q.dequeue()
         self.assertEqual('fi', q.data.first.value)
 
-    # def test_dequeue_three(self):
-    #     """
-    #     Dequeuing from a three-element queue returns each enqueued value in FIFO
-    #     order.
-    #     """
-    #     q = Queue()
-    #     q.enqueue('fee')
-    #     q.enqueue('fi')
-    #     q.enqueue('fo')
-    #     self.assertEqual('fee', q.dequeue())
-    #     self.assertEqual('fi', q.dequeue())
-    #     self.assertEqual('fo', q.dequeue())
+    def test_dequeue_three(self):
+        """
+        Dequeuing from a three-element queue returns each enqueued value in FIFO
+        order.
+        """
+        q = Queue()
+        q.enqueue('fee')
+        q.enqueue('fi')
+        q.enqueue('fo')
+        self.assertEqual('fee', q.dequeue())
+        self.assertEqual('fi', q.dequeue())
+        self.assertEqual('fo', q.dequeue())
 
     # def test_dequeue_three_internal(self):
     #     """
