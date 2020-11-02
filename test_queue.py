@@ -88,14 +88,14 @@ class TestQueue(unittest.TestCase):
         _ = q.dequeue()
         self.assertEqual(0, q.data.size)
 
-    # def test_dequeue_two(self):
-    #     """
-    #     Dequeuing from a two-element queue returns the first enqueued value.
-    #     """
-    #     q = Queue()
-    #     q.enqueue('fee')
-    #     q.enqueue('fi')
-    #     self.assertEqual('fee', q.dequeue())
+    def test_dequeue_two(self):
+        """
+        Dequeuing from a two-element queue returns the first enqueued value.
+        """
+        q = Queue()
+        q.enqueue('fee')
+        q.enqueue('fi')
+        self.assertEqual('fee', q.dequeue())
 
     # def test_dequeue_two_internal(self):
     #     """
