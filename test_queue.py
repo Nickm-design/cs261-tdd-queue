@@ -70,13 +70,13 @@ class TestQueue(unittest.TestCase):
         self.assertEqual('fee', q.data.first.value)
         self.assertEqual('fo', q.data.last.value)
 
-    # def test_dequeue_one(self):
-    #     """
-    #     Dequeuing from a single-element queue returns the single value.
-    #     """
-    #     q = Queue()
-    #     q.enqueue('fee')
-    #     self.assertEqual('fee', q.dequeue())
+    def test_dequeue_one(self):
+        """
+        Dequeuing from a single-element queue returns the single value.
+        """
+        q = Queue()
+        q.enqueue('fee')
+        self.assertEqual('fee', q.dequeue())
 
     # def test_dequeue_one_internal(self):
     #     """
