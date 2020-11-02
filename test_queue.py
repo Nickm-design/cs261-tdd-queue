@@ -139,12 +139,12 @@ class TestQueue(unittest.TestCase):
     Emptiness
     """
 
-    # def test_empty(self):
-    #     """
-    #     A queue is initially empty.
-    #     """
-    #     q = Queue()
-    #     self.assertTrue(q.is_empty())
+    def test_empty(self):
+        """
+        A queue is initially empty.
+        """
+        q = Queue()
+        self.assertTrue(q.is_empty())
 
     # def test_not_empty(self):
     #     """
