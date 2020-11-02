@@ -163,22 +163,22 @@ class TestQueue(unittest.TestCase):
         _ = q.dequeue()
         self.assertTrue(q.is_empty())
 
-    # def test_not_empty_multiple(self):
-    #     """
-    #     A queue with two enqueued values is not empty after dequeuing only one.
-    #     """
-    #     q = Queue()
-    #     q.enqueue('fee')
-    #     q.enqueue('fi')
-    #     _ = q.dequeue()
-    #     self.assertFalse(q.is_empty())
+    def test_not_empty_multiple(self):
+        """
+        A queue with two enqueued values is not empty after dequeuing only one.
+        """
+        q = Queue()
+        q.enqueue('fee')
+        q.enqueue('fi')
+        _ = q.dequeue()
+        self.assertFalse(q.is_empty())
 
-    # def test_initial_dequeue(self):
-    #     """
-    #     Dequeuing from an empty queue raises ValueError.
-    #     """
-    #     q = Queue()
-    #     self.assertRaises(ValueError, q.dequeue)
+    def test_initial_dequeue(self):
+        """
+        Dequeuing from an empty queue raises ValueError.
+        """
+        q = Queue()
+        self.assertRaises(ValueError, q.dequeue)
 
     """
     Algorithmic complexity
