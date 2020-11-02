@@ -146,13 +146,13 @@ class TestQueue(unittest.TestCase):
         q = Queue()
         self.assertTrue(q.is_empty())
 
-    # def test_not_empty(self):
-    #     """
-    #     A queue with one enqueued value is not empty.
-    #     """
-    #     q = Queue()
-    #     q.enqueue('fee')
-    #     self.assertFalse(q.is_empty())
+    def test_not_empty(self):
+        """
+        A queue with one enqueued value is not empty.
+        """
+        q = Queue()
+        q.enqueue('fee')
+        self.assertFalse(q.is_empty())
 
     # def test_empty_after_dequeue(self):
     #     """
