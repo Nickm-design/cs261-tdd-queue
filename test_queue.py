@@ -28,13 +28,13 @@ class TestQueue(unittest.TestCase):
     Guiding enqueuing and dequeuing with internal storage
     """
 
-    # def test_has_linked_list_internal(self):
-    #     """
-    #     A queue has a data member, which is an sllist.
-    #     """
-    #     from llist import sllist # Hint: pip3 install llist
-    #     q = Queue()
-    #     self.assertEqual(sllist, type(q.data))
+    def test_has_linked_list_internal(self):
+        """
+        A queue has a data member, which is an sllist.
+        """
+        from pyllist import sllist # Hint: pip3 install llist
+        q = Queue()
+        self.assertEqual(sllist, type(q.data))
 
     # Hint: Once test_has_linked_list_internal passes, uncomment the import at
     #       the top of this file.

@@ -3,10 +3,11 @@
 # YOUR NAME
 
 # Hint: pip3 install llist
-# from llist import sllist
+from pyllist import sllist
 
 class Queue:
 
-    def __init__(self):
-        pass
+    def __init__(self, data=None):
+        self.data = sllist()
+        
 
