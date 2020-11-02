@@ -9,5 +9,8 @@ class Queue:
 
     def __init__(self, data=None):
         self.data = sllist()
+
+    def enqueue(self, value):
+        self.data.append(value)
         
 

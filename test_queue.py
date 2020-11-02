@@ -6,7 +6,7 @@ import time
 from queue import Queue
 
 # Hint: Once test_has_linked_list_internal passes, uncomment this line.
-# from llist import sllist
+from llist import sllist
 
 
 class TestQueue(unittest.TestCase):
@@ -39,13 +39,13 @@ class TestQueue(unittest.TestCase):
     # Hint: Once test_has_linked_list_internal passes, uncomment the import at
     #       the top of this file.
 
-    # def test_enqueue_one_internal(self):
-    #     """
-    #     Enqueueing a value adds it to the internal sllist.
-    #     """
-    #     q = Queue()
-    #     q.enqueue('fee')
-    #     self.assertEqual('fee', q.data.first.value)
+    def test_enqueue_one_internal(self):
+        """
+        Enqueueing a value adds it to the internal sllist.
+        """
+        q = Queue()
+        q.enqueue('fee')
+        self.assertEqual('fee', q.data.first.value)
 
     # def test_enqueue_two_internal(self):
     #     """
